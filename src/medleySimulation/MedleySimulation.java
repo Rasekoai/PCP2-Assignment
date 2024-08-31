@@ -1,5 +1,10 @@
+//This is a modified version of MedleySimulation
+//The code was modified to adhere to concurrency rules 
+// Code edited by : Rasekoai Mokose
+//31/08/2024
+// The code was mainly written by
 //M. M. Kuttel 2024 mkuttel@gmail.com
-// MedleySimulation main class, starts all threads
+
 package medleySimulation;
 
 import javax.swing.*;
@@ -61,7 +66,7 @@ public class MedleySimulation {
 		    public void actionPerformed(ActionEvent e)  {
 			    	for (int i=0;i<numTeams;i++) {
                
-			      teams[i].start();
+			      teams[i].start();       // teams started of button click
 		}
  	  
 		    }
