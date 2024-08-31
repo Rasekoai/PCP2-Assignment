@@ -1,9 +1,9 @@
-//This is a modified version of MedleySimulation
-//The code was modified to adhere to concurrency rules 
+// This is a modified version of MedleySimulation class
+// The code was modified to initiate threads by start button 
 // Code edited by : Rasekoai Mokose
-//31/08/2024
+// Date: 31/08/2024
 // The code was mainly written by
-//M. M. Kuttel 2024 mkuttel@gmail.com
+// M. M. Kuttel 2024 mkuttel@gmail.com
 
 package medleySimulation;
 
