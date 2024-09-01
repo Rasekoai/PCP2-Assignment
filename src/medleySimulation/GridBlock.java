@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
 
 
 public class GridBlock {
-   private final Semaphore semaphore = new Semaphore(1); // Allow only one swimmer at a time
+   private final Semaphore semaphore = new Semaphore(1); // one swimmer allowed in the grid at a time
    private int isOccupied;
    private final boolean isStart;
    private int[] coords;
