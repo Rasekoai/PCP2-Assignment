@@ -2,15 +2,13 @@
 //Class to represent a swimmer swimming a race
 //Swimmers have one of four possible swim strokes: backstroke, breaststroke, butterfly and freestyle
 package medleySimulation;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.BrokenBarrierException;
-
 import java.awt.Color;
 import java.util.Random;
 
-
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.BrokenBarrierException;
 
 public class Swimmer extends Thread {
 
@@ -20,7 +18,6 @@ public class Swimmer extends Thread {
 
     public static StadiumGrid stadium; //shared 
     private final FinishCounter finish; //shared
-
 
     GridBlock currentBlock;
     private final Random rand;
@@ -55,7 +52,7 @@ public class Swimmer extends Thread {
     // Static block to initialize the semaphores and latch
     static {
         for (int i = 0; i < strokeSemaphores.length; i++) {
-            strokeSemaphores[i] = new Semaphore(1);
+            strokeSemaphores[i] = new Semaphore(10);
         }
         // Add a CountDownLatch for backstroke swimmers
         CountDownLatch backstrokeLatch = new CountDownLatch(10); // 10 teams
