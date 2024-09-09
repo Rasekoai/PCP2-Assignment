@@ -1,6 +1,5 @@
 // This is a modified version of MedleySimulation class
-// The code was modified to initiate threads by start button 
-// Code edited by : Rasekoai Mokose
+// Code modified by : Rasekoai Mokose
 // Date: 31/08/2024
 // The code was mainly written by
 // M. M. Kuttel 2024 mkuttel@gmail.com
@@ -115,6 +114,6 @@ public class MedleySimulation {
       	Thread results = new Thread(counterDisplay);  
       	results.start();
       	
-      	//start teams, which start swimmers.
+      	
       }
 }
